@@ -5,14 +5,14 @@ CREATE DATABASE restaurantDB;
 USE restaurantDB;
 
 CREATE TABLE reservations (
-    id INT(10) NOT NULL AUTO_INCREMENT,
-    name VARCHAR(100) NOT NULL,
-    phone INT(11) NOT NULL,
-    email VARCHAR(100) NOT NULL,
+    id INT NOT NULL AUTO_INCREMENT,
+    customer_name VARCHAR(100) NOT NULL,
+    customer_phone INT(11) NOT NULL,
+    customer_email VARCHAR(100) NOT NULL,
     PRIMARY KEY (id)
 );
 
-INSERT INTO reservations (name, phone, email)
+INSERT INTO reservations (customer_name, customer_phone, customer_email)
 VALUES ("Brian", 1234567890, "B@B.com"),
          ("Roberto", 1234567890, "R@R.com"),
          ("Avi", 1234567890, "A@A.com"),
