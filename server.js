@@ -14,7 +14,17 @@ var PORT = process.env.PORT || 3000;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+app.get('/', function(req, res) {
+    res.sendFile(path.join(__dirname, "index.html"));
+});
 
+app.get('/view', function(req, res) {
+    res.sendFile(path.join(__dirname, "view.html"));
+});
+
+app.get('/add', function(req, res) {
+    res.sendFile(path.join(__dirname, "add.html"));
+});
 
 // Starts the server to begin listening
 // =============================================================
