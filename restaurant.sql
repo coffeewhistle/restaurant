@@ -12,7 +12,7 @@ CREATE TABLE reservations (
     PRIMARY KEY (id)
 );
 
-INSERT INTO products (name, phone, email)
+INSERT INTO reservations (name, phone, email)
 VALUES ("Brian", 1234567890, "B@B.com"),
          ("Roberto", 1234567890, "R@R.com"),
          ("Avi", 1234567890, "A@A.com"),
